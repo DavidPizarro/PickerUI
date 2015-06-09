@@ -10,6 +10,10 @@ Try out the sample application on [Google Play][1].
          src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
+Screenshots
+=========================
+
+
 Including in Your Project
 =========================
 
@@ -34,6 +38,7 @@ To add the PickerUI to your layout add this to your xml
 
 You can add custom attributes in your xml to customize: background, colors, behaviors, elements, blur, blur effects...
 ```xml
+
 <com.dpizarro.uipicker.library.picker.PickerUI
         android:id="@+id/picker_ui_view"
         android:layout_width="match_parent"
@@ -50,9 +55,12 @@ You can add custom attributes in your xml to customize: background, colors, beha
         pickerui:blur_FilterColor="#ff5e48"
         pickerui:blur_radius="@integer/blur_radius_min"
         pickerui:blur_use_renderscript="true"/>
+        
 ```
+Review [attrs.xml][3] file to know the list of shapes ready to be used in the library.
 
-You can use PickerUI programatically, using the Builder class to set the settings and the desired functionalities of panel to make easy:
+
+This configuration can be also provided programmatically. You can use PickerUI programatically, using the Builder class to set the settings and the desired functionalities of panel to make easy:
 ```java
 PickerUI mPickerUI = (PickerUI) findViewById(R.id.picker_ui_view);
 
@@ -132,8 +140,7 @@ Contribution
 
 #### Pull requests are welcome!
 
-Feel free to contribute to PickerUI.
-
+I'd like to improve this library with your help!
 If you've fixed a bug or have a feature you've added, just create a pull request. Issues can be reported on the github issue tracker.
 
 Author
@@ -175,3 +182,4 @@ License
 
 [1]: https://play.google.com/store/apps/details?id=com.dpizarro.libraries.uipickerlibrary
 [2]: https://github.com/DavidPizarro/PickerUI/tree/master/UIPickerLibrary
+[3]: https://github.com/.../src/main/res/values/attrs.xml
