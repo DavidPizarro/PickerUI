@@ -102,8 +102,30 @@ Or browse the [source code of the sample application][2] for a complete example 
 Blur effect
 =====
 
-XXXXXXX
+This library applies a blur effect when you slide the picker, but it is optional and optimized.
+You can choose Java algorithm (slower) or **`RenderScript`** (a quick and efficient solution to blur images). Available since API 11 (Honeycomb), **`RenderScript`** allows to take advantage of the GPU acceleration and is targeted at high-performance 3D rendering and compute operations.
 
+For the integration of the **`RenderScript`** support library you just have to add two lines to your **`build.gradle`**. You do not need to declare any dependencies. Depending on the gradle version you are running, the commands are slightly different:
+
+#### 1. Gradle version 0.14+ and newer
+  ```xml
+  android {
+      defaultConfig {
+          renderscriptTargetApi 19
+          renderscriptSupportModeEnabled true
+      }
+  }
+  ```
+
+#### 2. Older Gradle versions up to 0.13
+  ```xml
+  android {
+    defaultConfig {
+        renderscriptTargetApi 19
+        renderscriptSupportMode true
+    }
+  }
+  ```
 
 Contribution
 ============
