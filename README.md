@@ -13,6 +13,7 @@ Try out the sample application on [Google Play][1].
 Screenshots
 =========================
 
+![Example gif](art/demo.gif)
 
 Including in Your Project
 =========================
@@ -181,5 +182,5 @@ License
 ---
 
 [1]: https://play.google.com/store/apps/details?id=com.dpizarro.libraries.uipickerlibrary
-[2]: https://github.com/DavidPizarro/PickerUI/tree/master/UIPickerLibrary
-[3]: https://github.com/.../src/main/res/values/attrs.xml
+[2]: https://github.com/DavidPizarro/PickerUI/tree/master/app
+[3]: https://github.com/DavidPizarro/PickerUI/blob/master/library/src/main/res/values/attrs.xml
