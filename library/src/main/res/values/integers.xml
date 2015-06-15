@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Max & min blur values -->
+    <integer name="blur_radius_min">1</integer>
+    <integer name="blur_downscale_min">1</integer>
+    <integer name="blur_radius_max">25</integer>
+    <integer name="blur_downscale_max">6</integer>
+
+    <!-- Animations -->
+    <integer name="animation_time">400</integer>
+</resources>

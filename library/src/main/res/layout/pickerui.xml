@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hidden_panel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_hidden_panel_pickerui"
+    android:visibility="gone"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/container_dropshadow"
+    android:animateLayoutChanges="true"
+    tools:visibility="visible"
+    >
+
+    <com.dpizarro.uipicker.library.picker.PickerUIListView
+        android:id="@+id/picker_ui_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/pickerui_item"
+        style="@style/PickerUI.ListView"
+        />
+
+    <View
+        android:id="@+id/picker_line_top"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_top_line_top_pickerui"
+        style="@style/line_center_default"
+        />
+
+    <View
+        android:id="@+id/picker_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_top_line_bottom_pickerui"
+        style="@style/line_center_default"
+        />
+
+</RelativeLayout>

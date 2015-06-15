@@ -25,3 +25,18 @@ proguard/
 
 # Log Files
 *.log
+
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+pickerui.iml
+.idea/modules.xml
+.idea/runConfigurations.xml
+app/app.iml
+library/library.iml
+gradle.properties
+UIPickerLibrary.iml
+.idea/misc.xml
+

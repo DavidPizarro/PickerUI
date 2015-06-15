@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PickerUI items dimens-->
+    <dimen name="height_normal_item_pickerui">40dp</dimen>
+    <dimen name="textsize_center_pickerui_item">25dp</dimen>
+    <dimen name="textsize_near_center_pickerui_item">17dp</dimen>
+    <dimen name="textsize_far_center_pickerui_item">15dp</dimen>
+    <dimen name="textsize_small_pickerui_item">11dp</dimen>
+
+    <!-- PickerUI lines dimens -->
+    <dimen name="margin_top_line_top_pickerui">80dp</dimen>
+    <dimen name="margin_top_line_bottom_pickerui">120dp</dimen>
+    <dimen name="height_lines_center_pickerui">1dp</dimen>
+
+    <!-- PickerUI panel dimens -->
+    <dimen name="height_hidden_panel_pickerui">200dp</dimen>
+
+</resources>

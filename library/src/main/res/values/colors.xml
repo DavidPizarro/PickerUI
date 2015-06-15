@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PickerUI lines colors -->
+    <color name="lines_panel_pickerui">#aaaaaa</color>
+
+    <!-- PickerUI panel colors -->
+    <color name="background_panel_pickerui">#fffafafa</color>
+
+    <!-- PickerUI items colors -->
+    <color name="text_center_pickerui">#ff000000</color>
+    <color name="text_no_center_pickerui">#aaa</color>
+    <drawable name="list_item_selected">#aaaaaa</drawable>
+
+    <!-- PickerUI shadow colors -->
+    <color name="grey1">#00CCCCCC</color>
+    <color name="grey2">#10CCCCCC</color>
+    <color name="grey3">#20CCCCCC</color>
+    <color name="grey4">#30CCCCCC</color>
+    <color name="grey5">#50747474</color>
+
+</resources>

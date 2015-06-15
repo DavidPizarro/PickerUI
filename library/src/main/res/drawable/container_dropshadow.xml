@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding
+                android:top="1dp"
+                android:right="0.5dp"
+                android:bottom="0dp"
+                android:left="0.5dp"/>
+            <solid android:color="@color/grey1"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="1dp"
+                android:right="0.5dp"
+                android:bottom="0dp"
+                android:left="0.5dp"/>
+            <solid android:color="@color/grey2"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="1dp"
+                android:right="0.5dp"
+                android:bottom="0dp"
+                android:left="0.5dp"/>
+            <solid android:color="@color/grey3"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="1dp"
+                android:right="0.5dp"
+                android:bottom="0dp"
+                android:left="0.5dp"/>
+            <solid android:color="@color/grey4"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:top="1dp"
+                android:right="0.5dp"
+                android:bottom="0dp"
+                android:left="0.5dp"/>
+            <solid android:color="@color/grey5"/>
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="@color/background_panel_pickerui"/>
+            <corners android:radius="1dp"/>
+        </shape>
+    </item>
+</layer-list>
