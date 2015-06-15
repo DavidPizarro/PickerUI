@@ -3,6 +3,8 @@
 Android library to display a list of items for pick one with blur effect (if you wish).
 Support for Android 3.0 and up. It supports portrait and landscape mode, saving the state.
 
+![Example screenshot](art/screenshots_framed.png)
+
 Try out the sample application on [Google Play][1].
 
 <a href="https://play.google.com/store/apps/details?id=com.dpizarro.libraries.uipickerlibrary/">
@@ -10,7 +12,7 @@ Try out the sample application on [Google Play][1].
          src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
-Screenshots
+Demo
 =========================
 
 ![Example gif](art/demo.gif)
