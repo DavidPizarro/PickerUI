@@ -7,7 +7,7 @@ Support for Android 3.0 and up. It supports portrait and landscape mode, saving 
 
 Try out the sample application on [Google Play][1].
 
-<a href="https://play.google.com/store/apps/details?id=com.dpizarro.libraries.uipickerlibrary/">
+<a href="https://play.google.com/store/apps/details?id=com.dpizarro.libraries.uipickerlibrary">
   <img alt="PickerUI Sample on Google Play"
          src="http://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
