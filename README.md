@@ -1,5 +1,7 @@
 # PickerUI
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PickerUI-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/2457) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.davidpizarro/pickerui/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.davidpizarro/pickerui)
+
 Android library to display a list of items for pick one with blur effect (if you wish).
 Support for Android 3.0 and up. It supports portrait and landscape mode, saving the state.
 
