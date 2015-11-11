@@ -291,7 +291,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
         setColorTextNoCenter(mColorTextNoCenterListView);
     }
 
-    private boolean isPanelShown() {
+    public boolean isPanelShown() {
         return mHiddenPanelPickerUI.getVisibility() == View.VISIBLE;
     }
 
