@@ -22,7 +22,7 @@ Demo
 Including in Your Project
 =========================
 
-Last version is 1.0.0
+**Last version is 1.0.1**
 
 Just add the following statement in your build.gradle
 
@@ -91,6 +91,7 @@ mPickerUI.setBackgroundColorPanel(R.color.background_picker);
 mPickerUI.setLinesColor(R.color.background_picker);
 mPickerUI.setItemsClickables(false);
 mPickerUI.setAutoDismiss(false);
+mPickerUI.isPanelShown();
 ```
 
 To slide (show/hide) PickerUI, you only have to use **`slide()`** method, selecting none (by default, center) or some position.
@@ -148,8 +149,12 @@ Contribution
 I'd like to improve this library with your help!
 If you've fixed a bug or have a feature you've added, just create a pull request. Issues can be reported on the github issue tracker.
 
+Who's using it
+=========================
+*Does your app use AutoLabelUI? If you want to be featured on this list drop me a line.*
+
 Author
--------
+============
 
 David Pizarro (dpizarro89@gmail.com)
 
