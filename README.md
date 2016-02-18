@@ -73,6 +73,7 @@ List<String> options = Arrays.asList(getResources().getStringArray(R.array.month
 
 PickerUISettings pickerUISettings = new PickerUISettings.Builder()
                                                       .withItems(options)
+                                                      .withPopupLocation(PickerUISettings.POPUP_AT_BOTTOM)
                                                       .withBackgroundColor(getRandomColor())
                                                       .withAutoDismiss(true)
                                                       .withItemsClickables(false)

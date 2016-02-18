@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/height_hidden_panel_pickerui"
     android:visibility="gone"
-    android:layout_alignParentBottom="true"
     android:background="@drawable/container_dropshadow"
     android:animateLayoutChanges="true"
     tools:visibility="visible"
