@@ -41,7 +41,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
 
     private static final String LOG_TAG = PickerUI.class.getSimpleName();
 
-    private boolean autoDismiss     = PickerUISettings.DEFAULT_AUTO_DISMISS;
+    private boolean autoDismiss = PickerUISettings.DEFAULT_AUTO_DISMISS;
     private boolean itemsClickables = PickerUISettings.DEFAULT_ITEMS_CLICKABLES;
 
     private PickerUIItemClickListener mPickerUIListener;
@@ -55,6 +55,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
     private int colorLines;
     private int mColorTextCenterListView;
     private int mColorTextNoCenterListView;
+    private int mPopupLocation;
     private PickerUISettings mPickerUISettings;
 
     /**
@@ -121,6 +122,21 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
     }
 
     /**
+     * Set view popupLocation
+     */
+    private void setViewPopupLocation(int popupLocation) {
+        RelativeLayout hidePanel = (RelativeLayout) findViewById(R.id.hidden_panel);
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) hidePanel.getLayoutParams();
+        if (popupLocation == PickerUISettings.POPUP_AT_BOTTOM) {
+            params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+            hidePanel.setLayoutParams(params);
+        } else if (popupLocation == PickerUISettings.POPUP_AT_TOP) {
+            params.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+            hidePanel.setLayoutParams(params);
+        }
+    }
+
+    /**
      * Retrieve styles attributes
      */
     private void getAttributes(AttributeSet attrs) {
@@ -144,7 +160,8 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
                 mColorTextNoCenterListView = typedArray
                         .getColor(R.styleable.PickerUI_textNoCenterColor,
                                 getResources().getColor(R.color.text_no_center_pickerui));
-
+                mPopupLocation = typedArray.getInteger(R.styleable.PickerUI_popupLocation, PickerUISettings.POPUP_AT_UNSPECIFIED);
+                setViewPopupLocation(mPopupLocation);
                 int idItems;
                 idItems = typedArray.getResourceId(R.styleable.PickerUI_entries, -1);
                 if (idItems != -1) {
@@ -361,7 +378,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
 
     /**
      * Apply custom down scale factor
-     *
+     * <p/>
      * By default down scale factor is set to {@link PickerUIBlur#MIN_DOWNSCALE}
      *
      * @param downScaleFactor Factor customized down scale factor, must be at least 1.0
@@ -374,7 +391,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
 
     /**
      * Select your preferred blur radius to apply
-     *
+     * <p/>
      * By default blur radius is set to {@link PickerUIBlur#MIN_BLUR_RADIUS}
      *
      * @param radius The radius to blur the image, radius must be at least 1
@@ -501,7 +518,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
                 new PickerUIListView.PickerUIItemClickListener() {
                     @Override
                     public void onItemClickItemPickerUI(int which, int position,
-                            String valueResult) {
+                                                        String valueResult) {
                         if (autoDismiss) {
                             slide(position);
                         }
@@ -534,6 +551,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
         setBlurRadius(pickerUISettings.getBlurRadius());
         setDownScaleFactor(pickerUISettings.getBlurDownScaleFactor());
         setFilterColor(pickerUISettings.getBlurFilterColor());
+        setViewPopupLocation(pickerUISettings.getPopupLocation());
     }
 
     /**
@@ -561,7 +579,7 @@ public class PickerUI extends RelativeLayout implements PickerUIBlurHelper.BlurF
             Bundle bundle = (Bundle) state;
             //load everything
             PickerUISettings pickerUISettings = bundle.getParcelable("stateSettings");
-            if(pickerUISettings!=null){
+            if (pickerUISettings != null) {
                 setSettings(pickerUISettings);
             }
 

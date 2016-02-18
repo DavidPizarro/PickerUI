@@ -77,25 +77,25 @@ public class MainActivity extends ActionBarActivity {
 
                 int randomColor = -1;
 
-                if(mRandomColor.isChecked()){
+                if (mRandomColor.isChecked()) {
                     randomColor = getRandomColor();
                 }
 
                 PickerUISettings pickerUISettings =
                         new PickerUISettings.Builder().withItems(options)
-                                                      .withBackgroundColor(randomColor)
-                                                      .withAutoDismiss(mAutoDismiss.isChecked())
-                                                      .withItemsClickables(
-                                                              mItemsClickables.isChecked())
-                                                      .withUseBlur(mUseBlur.isChecked())
-                                                      .build();
+                                .withPopupLocation(PickerUISettings.POPUP_AT_BOTTOM)
+                                .withBackgroundColor(randomColor)
+                                .withAutoDismiss(mAutoDismiss.isChecked())
+                                .withItemsClickables(
+                                        mItemsClickables.isChecked())
+                                .withUseBlur(mUseBlur.isChecked())
+                                .build();
 
                 mPickerUI.setSettings(pickerUISettings);
 
-                if(currentPosition==-1) {
+                if (currentPosition == -1) {
                     mPickerUI.slide();
-                }
-                else{
+                } else {
                     mPickerUI.slide(currentPosition);
                 }
             }
